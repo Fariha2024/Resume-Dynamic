@@ -1,31 +1,21 @@
 {
   "name": "resume-dynamic",
   "version": "1.0.0",
-  "description": "second milestone",
-  "main": "script.js",
+  "description": "A dynamic project with animations",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "fariha",
-  "license": "ISC"
-  "dependencies": {},
-  "devDependencies": {},
-}
-
-{
-
-  "scripts": {
-    "start": "node index.js"
+    "start": "npm run preview",
+    "build": "npm run build",
+    "preview": "live-server public/"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.9.10"
+    "animate.css": "^4.1.1",
+    "gsap": "^3.10.0",
+    "uuid": "^10.0.0"
   },
+  "author": "Fariha",
+  "license": "ISC",
   "devDependencies": {
-    "jest": "^26.0.1"
-  },
-  
-}
-  "dependencies": {
-  "package-name": "version-range"
+    "live-server": "^1.2.0"
+  }
 }

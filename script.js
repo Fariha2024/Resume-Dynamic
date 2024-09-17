@@ -1,4 +1,12 @@
-
+// Example of dynamically loading content
+document.addEventListener('DOMContentLoaded', () => {
+    const contentElement = document.getElementById('dynamic-content');
+    if (contentElement) {
+      contentElement.innerHTML = '<p>Dynamic content loaded!</p>';
+    }
+  
+    // Initialize animations or other dynamic behaviors
+  });
 
 
 document.addEventListener('DOMContentLoaded', function() {

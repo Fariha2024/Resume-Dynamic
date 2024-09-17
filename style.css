@@ -2,6 +2,16 @@
 
 /* style.css */
 /* Basic reset for consistent styling */
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/public/fonts/my-custom-font.woff2') format('woff2');
+}
+
+body {
+  font-family: 'MyCustomFont', sans-serif;
+}
+
 body, h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;

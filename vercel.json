@@ -1,40 +1,16 @@
+
 {
   "version": 2,
   "builds": [
     {
       "src": "index.html",
-      "use": "@vercel/resume dynamic"
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-       "dest": "/public/$1",
-      
+      "dest": "/$1"
     }
-  ]
-}
-
-
-{
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-cache"
-        }
-      ]
-    }
-  ]
-}
-
-{
-  "builds": [
-    { "src": "index.html", "use": "@vercel/resume dynamic" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }

@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "index.html",
-      "use": "@vercel/static"
+      "use": "@vercel/resume dynamic"
     }
   ],
   "routes": [
@@ -26,5 +26,14 @@
         }
       ]
     }
+  ]
+}
+
+{
+  "builds": [
+    { "src": "index.html", "use": "@vercel/resume dynamic" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
